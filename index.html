@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>אלון שמש | מאמן כושר אישי</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Heebo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav id="main-nav">
+        <div class="nav-logo">ALON<span>.</span>SHAMESH</div>
+        <ul class="nav-links">
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#services">שירותים</a></li>
+            <li><a href="#programs">תוכניות</a></li>
+            <li><a href="#testimonials">לקוחות</a></li>
+            <li><a href="#contact" class="nav-cta">התחל עכשיו</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="תפריט">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" onclick="closeMobile()">אודות</a>
+        <a href="#services" onclick="closeMobile()">שירותים</a>
+        <a href="#programs" onclick="closeMobile()">תוכניות</a>
+        <a href="#testimonials" onclick="closeMobile()">לקוחות</a>
+        <a href="#contact" onclick="closeMobile()">התחל עכשיו</a>
+    </div>
+
+    <!-- ─── SECTION DOTS ─── -->
+    <div class="page-dots" id="page-dots">
+        <button class="dot active" data-section="hero" title="ראשי"></button>
+        <button class="dot" data-section="about" title="אודות"></button>
+        <button class="dot" data-section="services" title="שירותים"></button>
+        <button class="dot" data-section="programs" title="תוכניות"></button>
+        <button class="dot" data-section="testimonials" title="לקוחות"></button>
+        <button class="dot" data-section="contact" title="קשר"></button>
+    </div>
+
+    <!-- ─── ACCESSIBILITY ─── -->
+    <button id="acc-btn" aria-label="נגישות">
+        <i class="fas fa-universal-access"></i>
+    </button>
+    <div id="acc-panel">
+        <p class="acc-title">נגישות</p>
+        <button class="acc-opt" data-cls="larger-text">
+            <i class="fas fa-text-height"></i> הגדל טקסט
+        </button>
+        <button class="acc-opt" data-cls="high-contrast">
+            <i class="fas fa-circle-half-stroke"></i> ניגודיות גבוהה
+        </button>
+        <button class="acc-opt" data-cls="grayscale-mode">
+            <i class="fas fa-droplet-slash"></i> גווני אפור
+        </button>
+        <button class="acc-reset">
+            <i class="fas fa-rotate-left"></i> איפוס
+        </button>
+    </div>
+
+    <!-- ─── SCROLL TOP ─── -->
+    <button id="scroll-top" aria-label="גלול למעלה">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-noise"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <i class="fas fa-shield-halved"></i>
+                    מאמן כושר מוסמך &mdash; 9 שנות ניסיון
+                </div>
+                <h1 class="hero-title">
+                    הגוף שרצית<br />
+                    מתחיל <span>כאן</span>
+                </h1>
+                <p class="hero-sub">
+                    תוכניות אימון מדויקות, ליווי צמוד ומחויבות אמיתית לתוצאות.<br />
+                    לא עוד הבטחות &mdash; רק עבודה ותוצאות שאפשר למדוד.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-arrow-left"></i>
+                        קבל ייעוץ חינם
+                    </a>
+                    <a href="#programs" class="btn-ghost">צפה בתוכניות</a>
+                </div>
+            </div>
+
+            <div class="hero-side">
+                <div class="coach-card">
+                    <div class="coach-icon-wrap">
+                        <i class="fas fa-person-running"></i>
+                    </div>
+                    <div class="coach-info">
+                        <div class="coach-name">אלון שמש</div>
+                        <div class="coach-role">מאמן כושר אישי &amp; תזונאי ספורט</div>
+                        <div class="coach-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (320+ ביקורות)</span>
+                        </div>
+                    </div>
+                    <div class="coach-certs">
+                        <span class="cert-tag"><i class="fas fa-check"></i> וינגייט מוסמך</span>
+                        <span class="cert-tag"><i class="fas fa-check"></i> תזונה ספורטיבית</span>
+                        <span class="cert-tag"><i class="fas fa-check"></i> NLP Practitioner</span>
+                    </div>
+                </div>
+
+                <div class="hero-stats-col">
+                    <div class="hstat">
+                        <div class="hstat-num">320<sup>+</sup></div>
+                        <div class="hstat-lbl">לקוחות</div>
+                    </div>
+                    <div class="hstat-divider"></div>
+                    <div class="hstat">
+                        <div class="hstat-num">94<sup>%</sup></div>
+                        <div class="hstat-lbl">הגיעו למטרה</div>
+                    </div>
+                    <div class="hstat-divider"></div>
+                    <div class="hstat">
+                        <div class="hstat-num">9<sup>+</sup></div>
+                        <div class="hstat-lbl">שנות ניסיון</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+
+                <div class="about-visual reveal">
+                    <div class="about-icon-block">
+                        <i class="fas fa-dumbbell"></i>
+                        <div class="about-icon-label">CERTIFIED COACH</div>
+                    </div>
+                    <div class="about-years-badge">
+                        <div class="ayb-num">9</div>
+                        <div class="ayb-lbl">שנים<br />בתחום</div>
+                    </div>
+                    <div class="about-cert-strip">
+                        <i class="fas fa-medal"></i> חבר איגוד מאמני כושר ישראל
+                    </div>
+                </div>
+
+                <div class="about-text reveal stagger-2">
+                    <div class="section-eyebrow">מי אני</div>
+                    <h2>מאמן שמאמין<br />ב<span>תוצאות אמיתיות</span></h2>
+                    <p>
+                        שמי אלון שמש. עבדתי עם מאות לקוחות &mdash; מאנשים שלא נכנסו לחדר כושר בחייהם, ועד ספורטאים
+                        תחרותיים. בסוף, כולם רוצים אותו דבר: לראות שינוי אמיתי.
+                    </p>
+                    <p>
+                        הגישה שלי מבוססת על מדע, עקביות ותוכנית שמתאימה לחיים שלך &mdash; לא למישהו אחר.
+                    </p>
+
+                    <div class="qual-list">
+                        <div class="qual-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>מאמן כושר מוסמך</strong>
+                                <span>מכון וינגייט, 2015</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <i class="fas fa-apple-whole"></i>
+                            <div>
+                                <strong>תזונאי ספורט מוסמך</strong>
+                                <span>אוניברסיטת חיפה, 2017</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <i class="fas fa-heart-pulse"></i>
+                            <div>
+                                <strong>תכנון עומסים ושיקום</strong>
+                                <span>קורס מתקדם, 2020</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <strong>NLP Practitioner</strong>
+                                <span>מאמן מנטלי מוסמך, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" style="margin-top:1.8rem;display:inline-flex;">
+                        <i class="fas fa-phone"></i> שוחח איתי
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     SERVICES
+══════════════════════════════ -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">שירותים</div>
+                <h2>מה אני <span>מציע</span></h2>
+            </div>
+            <div class="services-grid">
+
+                <div class="srv-card reveal stagger-1">
+                    <div class="srv-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>אימון אישי 1:1</h3>
+                    <p>ליווי מלא ואישי. כל אימון מותאם לרמתך, לקצב שלך ולמטרה שהגדרת.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪280 <small>/ אימון</small></span>
+                    </div>
+                </div>
+
+                <div class="srv-card reveal stagger-2">
+                    <div class="srv-icon"><i class="fas fa-users"></i></div>
+                    <h3>אימון קבוצתי</h3>
+                    <p>קבוצות של 4–6 אנשים. תחרותיות בריאה, אנרגיה גבוהה ומחיר נגיש.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪120 <small>/ אימון</small></span>
+                    </div>
+                </div>
+
+                <div class="srv-card reveal stagger-3">
+                    <div class="srv-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>אימון אונליין</h3>
+                    <p>עובד מכל מקום בעולם. תוכנית, וידאו, מעקב ותקשורת שוטפת דרך האפליקציה.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪650 <small>/ חודש</small></span>
+                    </div>
+                </div>
+
+                <div class="srv-card reveal stagger-1">
+                    <div class="srv-icon"><i class="fas fa-bowl-food"></i></div>
+                    <h3>ייעוץ תזונה</h3>
+                    <p>תפריט מבוסס מדע, מותאם לגופך ולאימון שלך. בלי דיאטות קסם &mdash; רק מה שעובד.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪450 <small>/ ייעוץ</small></span>
+                    </div>
+                </div>
+
+                <div class="srv-card reveal stagger-2">
+                    <div class="srv-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>תוכנית אימונים</h3>
+                    <p>12 שבועות מובנים, הסברי וידאו לכל תרגיל ועדכון אוטומטי בהתאם להתקדמות.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪380 <small>/ תוכנית</small></span>
+                    </div>
+                </div>
+
+                <div class="srv-card reveal stagger-3">
+                    <div class="srv-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>מעקב ומדידות</h3>
+                    <p>ניתוח הרכב גוף חודשי, עדכון תוכנית ודוח התקדמות מפורט בכל חודש.</p>
+                    <div class="srv-footer">
+                        <span class="srv-price">₪180 <small>/ חודש</small></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     PROGRAMS
+══════════════════════════════ -->
+    <section id="programs">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">תוכניות אימון</div>
+                <h2>בחר את <span>התוכנית</span> שלך</h2>
+            </div>
+            <div class="programs-grid">
+
+                <div class="prog-card reveal stagger-1">
+                    <div class="prog-icon-block level-1">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="prog-body">
+                        <div class="prog-level-tag">מתחילים</div>
+                        <h3>StartFit</h3>
+                        <p>8 שבועות של יסודות הכושר. תרגילי בסיס, עקרונות תזונה ובניית הרגלים ששורדים.</p>
+                        <div class="prog-meta">
+                            <span><i class="fas fa-calendar-days"></i> 8 שבועות</span>
+                            <span><i class="fas fa-repeat"></i> 3&times; שבוע</span>
+                            <span><i class="fas fa-tag"></i> ₪590</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prog-card reveal stagger-2">
+                    <div class="prog-icon-block level-2">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="prog-body">
+                        <div class="prog-level-tag">בינוני</div>
+                        <h3>PowerUp</h3>
+                        <p>12 שבועות של בניית כוח ושרירים. הרמת משקולות עם תכנון עומסים מדויק.</p>
+                        <div class="prog-meta">
+                            <span><i class="fas fa-calendar-days"></i> 12 שבועות</span>
+                            <span><i class="fas fa-repeat"></i> 4&times; שבוע</span>
+                            <span><i class="fas fa-tag"></i> ₪890</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prog-card reveal stagger-3">
+                    <div class="prog-icon-block level-3">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="prog-body">
+                        <div class="prog-level-tag">מתקדמים</div>
+                        <h3>EliteBody</h3>
+                        <p>16 שבועות של עיצוב גוף קיצוני. שילוב כוח, קרדיו ותזונה ייעודית.</p>
+                        <div class="prog-meta">
+                            <span><i class="fas fa-calendar-days"></i> 16 שבועות</span>
+                            <span><i class="fas fa-repeat"></i> 5&times; שבוע</span>
+                            <span><i class="fas fa-tag"></i> ₪1,290</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     RESULTS BAR
+══════════════════════════════ -->
+    <section id="results-bar">
+        <div class="container">
+            <div class="rbar-grid">
+                <div class="rbar-item reveal stagger-1">
+                    <i class="fas fa-users"></i>
+                    <div class="rbar-num" data-target="320">0</div>
+                    <div class="rbar-lbl">לקוחות מרוצים</div>
+                </div>
+                <div class="rbar-item reveal stagger-2">
+                    <i class="fas fa-weight-scale"></i>
+                    <div class="rbar-num" data-target="2400">0</div>
+                    <div class="rbar-lbl">ק"ג שנפרדו ממנו</div>
+                </div>
+                <div class="rbar-item reveal stagger-3">
+                    <i class="fas fa-bullseye"></i>
+                    <div class="rbar-num" data-target="94">0</div>
+                    <div class="rbar-lbl">% הגיעו למטרה</div>
+                </div>
+                <div class="rbar-item reveal stagger-4">
+                    <i class="fas fa-star"></i>
+                    <div class="rbar-num" data-target="4.9" data-decimal="1">0</div>
+                    <div class="rbar-lbl">דירוג ממוצע Google</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     TESTIMONIALS
+══════════════════════════════ -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">לקוחות מספרים</div>
+                <h2>מה <span>אומרים</span> עלי</h2>
+            </div>
+            <div class="testi-grid">
+
+                <div class="testi-card reveal stagger-1">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>אלון שינה את הגישה שלי לכושר לחלוטין. 3 חודשים, 12 ק"ג למטה ושרירים שמעולם לא חשבתי שיהיו לי.
+                        מקצועי, סבלני ותמיד זמין.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">ר</div>
+                        <div>
+                            <strong>רוני כהן</strong>
+                            <span>מנהל פרויקטים, תל אביב</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal stagger-2">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>רצתי חצי מרתון בזכות אלון. ההכנה הייתה מדויקת ומדעית. גמרתי עם שיא אישי שלא חשבתי שאוכל להגיע
+                        אליו.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">י</div>
+                        <div>
+                            <strong>יוסי אברהם</strong>
+                            <span>אדריכל, חיפה</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal stagger-3">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>עברתי ניתוח בגב ולא ידעתי איך לחזור לכושר. אלון ליווה אותי בזהירות ובמקצועיות. היום אני חזק יותר
+                        מלפני הניתוח.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">ד</div>
+                        <div>
+                            <strong>דניאל פרץ</strong>
+                            <span>רופא, רמת גן</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal stagger-1">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>ניסיתי הרבה מאמנים לפני. אף אחד לא הבין מה אני צריכה כמו אלון. התוכנית המשולבת עם תזונה הייתה
+                        שינוי חיים ממש.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">מ</div>
+                        <div>
+                            <strong>מאיה לוי</strong>
+                            <span>מורה, ירושלים</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal stagger-2">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>כאבא לשלושה ילדים קטנים הייתי בטוח שאין לי זמן. אלון בנה לי תוכנית של 45 דקות ביום שהתאימה בדיוק
+                        לחיים שלי.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">א</div>
+                        <div>
+                            <strong>אריאל שפירו</strong>
+                            <span>מהנדס, פתח תקווה</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal stagger-3">
+                    <div class="testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>אלון לא רק מאמן — הוא מנטור. 8 חודשים אחרי אני לא מזהה את עצמי. ההשקעה בעצמי דרכו הייתה ההשקעה
+                        הכי טובה שעשיתי.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">נ</div>
+                        <div>
+                            <strong>נועם שפר</strong>
+                            <span>עורך דין, תל אביב</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">צור קשר</div>
+                <h2>מוכן <span>להתחיל?</span></h2>
+            </div>
+            <div class="contact-grid">
+
+                <div class="contact-info reveal">
+                    <p class="contact-intro">השאר פרטים ואחזור אליך תוך 24 שעות לייעוץ ראשוני בחינם. ללא התחייבות.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="ci-main">054-1234567</div>
+                                <div class="ci-sub">ענייה כל יום 8:00–20:00</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="ci-main">alon@shamesh-fit.co.il</div>
+                                <div class="ci-sub">תשובה תוך 24 שעות</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <div class="ci-main">WhatsApp</div>
+                                <div class="ci-sub">הדרך המהירה ביותר</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <div class="ci-main">רחוב הספורט 14, תל אביב</div>
+                                <div class="ci-sub">גם בשטח / בבית הלקוח</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal stagger-2" id="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>שם פרטי</label>
+                            <input type="text" placeholder="הכנס שם" required />
+                        </div>
+                        <div class="form-group">
+                            <label>שם משפחה</label>
+                            <input type="text" placeholder="הכנס שם" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>טלפון</label>
+                            <input type="tel" placeholder="050-0000000" required />
+                        </div>
+                        <div class="form-group">
+                            <label>אימייל</label>
+                            <input type="email" placeholder="you@email.com" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>מה המטרה שלך?</label>
+                        <select>
+                            <option value="">בחר מטרה...</option>
+                            <option>ירידה במשקל</option>
+                            <option>בניית שרירים</option>
+                            <option>שיפור כושר כללי</option>
+                            <option>הכנה לאירוע ספורטיבי</option>
+                            <option>חיזוק לאחר פציעה</option>
+                            <option>אחר</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>הודעה (אופציונלי)</label>
+                        <textarea placeholder="ספר לי קצת על עצמך..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        שלח &mdash; אחזור תוך 24 שעות
+                    </button>
+                    <div class="form-success" id="form-success">
+                        <i class="fas fa-circle-check"></i>
+                        קיבלתי! אחזור אליך בהקדם.
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">ALON<span>.</span>SHAMESH</div>
+                    <p>מאמן כושר אישי מוסמך עם 9 שנות ניסיון. כאן כדי לעזור לך להגיע לגרסה הטובה ביותר של עצמך.</p>
+                    <div class="social-row">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>ניווט</h4>
+                    <ul>
+                        <li><a href="#about">אודות</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="#programs">תוכניות</a></li>
+                        <li><a href="#testimonials">המלצות</a></li>
+                        <li><a href="#contact">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>שירותים</h4>
+                    <ul>
+                        <li><a href="#">אימון אישי 1:1</a></li>
+                        <li><a href="#">אימון קבוצתי</a></li>
+                        <li><a href="#">אימון אונליין</a></li>
+                        <li><a href="#">ייעוץ תזונה</a></li>
+                        <li><a href="#">תוכניות מובנות</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 אלון שמש &mdash; כל הזכויות שמורות</p>
+                <div class="demo-badge"><i class="fas fa-flask"></i> אתר דמו בלבד</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
